@@ -1,0 +1,542 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shyam — Software Engineer</title>
+    <link rel="icon" href="favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Syne:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <script src="./script.js" type="module"></script>
+  <body>
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+
+    <!-- Nav -->
+    <nav>
+      <a href="#hero" class="nav-logo">Shyam<span>.dev</span></a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Hero -->
+    <section id="hero">
+      <div class="hero-glow"></div>
+      <div class="hero-content">
+        <p class="hero-eyebrow">Available for opportunities</p>
+        <h1 class="hero-name">
+          Shyamsundar
+          <span class="accent-line">Gayen</span>
+        </h1>
+        <p class="hero-tagline">
+          <span class="tag">Frontend, Backend &amp; Full-Stack Engineer</span> —
+          building systems that scale. B.Tech CSE, passionate about clean
+          architecture, embedded systems and writing code that lasts.
+        </p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn-primary">View My Work</a>
+          <a href="#" class="btn-secondary">Download Resume ↓</a>
+        </div>
+      </div>
+
+      <div class="hero-terminal">
+        <div class="terminal-bar">
+          <div class="dot red"></div>
+          <div class="dot yellow"></div>
+          <div class="dot green"></div>
+          <span class="terminal-title">~/shyam — zsh</span>
+        </div>
+        <div class="terminal-body">
+          <div class="t-line">
+            <span class="t-prompt">➜</span><span class="t-cmd">whoami</span>
+          </div>
+          <div class="t-out t-acc">shyamsundar_gayen</div>
+          <br />
+          <div class="t-line">
+            <span class="t-prompt">➜</span
+            ><span class="t-cmd">cat skills.txt</span>
+          </div>
+          <div class="t-out">
+            <span class="t-grn">languages:</span> C · Java · JS · TS · Python
+          </div>
+          <div class="t-out">
+            <span class="t-grn">backend:</span> Node.js · Express · MongoDB
+          </div>
+          <div class="t-out">
+            <span class="t-grn">systems:</span> ESP32 · Arduino
+          </div>
+          <div class="t-out">
+            <span class="t-grn">tools:</span> Git · GitHub Actions · Render
+          </div>
+          <br />
+          <div class="t-line">
+            <span class="t-prompt">➜</span
+            ><span class="t-cmd">git log --oneline -3</span>
+          </div>
+          <div class="t-out">
+            <span class="t-org">a3f1c2b</span> feat: NTP sync clock with OLED
+          </div>
+          <div class="t-out">
+            <span class="t-org">b82de91</span> ci: docker + github actions
+            pipeline
+          </div>
+          <div class="t-out">
+            <span class="t-org">c44fa20</span> init: student task manager API
+          </div>
+          <br />
+          <div class="t-line">
+            <span class="t-prompt">➜</span><span class="t-cursor"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+      <div class="section-inner">
+        <p class="section-label">01 // About</p>
+        <h2 class="section-title reveal">Who I am</h2>
+        <div class="about-grid reveal">
+          <div class="about-text">
+            <p>
+              I'm a
+              <strong>2nd-year Computer Science Engineering student</strong> at
+              Swami Vivekananda University, India, building toward a career in
+              <span class="hl"
+                >frontend, backend and full-stack engineering</span
+              >. My foundation is in <strong>C</strong> — years of pointers,
+              memory management, and low-level thinking that inform how I
+              approach every layer of the stack.
+            </p>
+            <p>
+              I like understanding how things work <strong>end-to-end</strong>.
+              That's why I've built REST APIs, containerized them with Docker,
+              wired up CI/CD pipelines, and also soldered microcontrollers to
+              OLED displays for fun. Systems thinking across domains excites me
+              more than staying inside one lane.
+            </p>
+            <p>
+              When I'm not coding, I'm diving into
+              <span class="hl">cybersecurity concepts</span>, experimenting with
+              <strong>embedded systems</strong>, or grinding DSA problems. I
+              believe clean architecture and deliberate design decisions are
+              what separate good engineers from great ones.
+            </p>
+          </div>
+          <div class="about-stats">
+            <div class="stat-box">
+              <div class="stat-num">3+</div>
+              <div class="stat-label">Years in C</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-num">6+</div>
+              <div class="stat-label">Languages</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-num">10+</div>
+              <div class="stat-label">Projects built</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-num">∞</div>
+              <div class="stat-label">Curiosity</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+      <div class="section-inner">
+        <p class="section-label">02 // Skills</p>
+        <h2 class="section-title reveal">Tech stack</h2>
+        <div class="skills-grid reveal">
+          <div class="skill-group">
+            <div class="skill-group-label">Languages</div>
+            <div class="skill-tags">
+              <span class="skill-tag primary">C</span>
+              <span class="skill-tag primary">C++</span>
+              <span class="skill-tag primary">JavaScript</span>
+              <span class="skill-tag primary">TypeScript</span>
+              <span class="skill-tag">Java</span>
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">SQL</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <div class="skill-group-label">Backend & APIs</div>
+            <div class="skill-tags">
+              <span class="skill-tag primary">Node.js</span>
+              <span class="skill-tag primary">Express.js</span>
+              <span class="skill-tag primary">MongoDB</span>
+              <span class="skill-tag primary">REST APIs</span>
+              <span class="skill-tag">JWT Auth</span>
+              <span class="skill-tag">MySQL</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <div class="skill-group-label">Frontend</div>
+            <div class="skill-tags">
+              <span class="skill-tag primary">React</span>
+              <span class="skill-tag">HTML/CSS</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <div class="skill-group-label">DevOps & Tools</div>
+            <div class="skill-tags">
+              <span class="skill-tag primary">Docker</span>
+              <span class="skill-tag primary">GitHub Actions</span>
+              <span class="skill-tag primary">Git</span>
+              <span class="skill-tag">Docker Compose</span>
+              <span class="skill-tag">Render</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <div class="skill-group-label">Embedded Systems</div>
+            <div class="skill-tags">
+              <span class="skill-tag primary">ESP32</span>
+              <span class="skill-tag primary">Arduino</span>
+              <span class="skill-tag">OLED (u8g2)</span>
+              <span class="skill-tag">NTP Sync</span>
+              <span class="skill-tag">WiFi</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <div class="skill-group-label">Exploring</div>
+            <div class="skill-tags">
+              <span class="skill-tag">Cybersecurity</span>
+              <span class="skill-tag">Web3 / Blockchain</span>
+              <span class="skill-tag">Systems Programming</span>
+              <span class="skill-tag">ML / Linear Regression</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+      <div class="section-inner">
+        <p class="section-label">03 // Projects</p>
+        <h2 class="section-title reveal">Things I've built</h2>
+        <div class="projects-grid reveal">
+          <!-- Featured -->
+          <div class="project-card featured">
+            <div>
+              <div class="project-num">01</div>
+              <div class="project-name">Student Task Manager API</div>
+              <p class="project-desc">
+                A production-deployed REST API for managing student tasks with
+                JWT authentication, MongoDB Atlas as the database, and a full
+                CI/CD pipeline — GitHub Actions → Docker Hub → Render
+                auto-deploy. Debugged real-world issues like DNS SRV blocks on
+                mobile carriers and MongoDB connection edge cases.
+              </p>
+              <div class="project-stack">
+                <span class="stack-tag">Node.js</span>
+                <span class="stack-tag">Express</span>
+                <span class="stack-tag">MongoDB</span>
+                <span class="stack-tag">JWT</span>
+                <span class="stack-tag">Docker</span>
+                <span class="stack-tag">GitHub Actions</span>
+                <span class="stack-tag">Render</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://github.com/DeShyam01/student-task-manager-api"
+                  class="project-link"
+                  target="_blank"
+                >
+                  <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"
+                    />
+                  </svg>
+                  GitHub
+                </a>
+              </div>
+            </div>
+            <div
+              style="
+                align-self: center;
+                text-align: right;
+                opacity: 0.08;
+                font-family: var(--font-display);
+                font-size: 6rem;
+                font-weight: 800;
+                line-height: 1;
+                pointer-events: none;
+                user-select: none;
+              "
+            >
+              API
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="project-card">
+            <div class="project-num">02</div>
+            <div class="project-name">MovieMania</div>
+            <p class="project-desc">
+              MovieMania is a stylish front-end movie showcase website built
+              using only HTML and CSS. It features a clean card-based layout,
+              responsive design, and theme toggle — all crafted without any
+              JavaScript. The site offers a curated list of trending shows and
+              lets users visit external pages for more details.
+            </p>
+            <div class="project-stack">
+              <span class="stack-tag">HTML</span>
+              <span class="stack-tag">CSS</span>
+            </div>
+            <div class="project-links">
+              <a
+                href="https://github.com/DeShyam01/MovieMania"
+                class="project-link"
+                target="_blank"
+              >
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"
+                  />
+                </svg>
+                GitHub
+              </a>
+              <a
+                href="https://deshyam01.github.io/MovieMania/"
+                class="project-link"
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                  />
+                  <polyline points="15 3 21 3 21 9" />
+                  <line x1="10" y1="14" x2="21" y2="3" />
+                </svg>
+                Live Demo
+              </a>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="project-card">
+            <div class="project-num">03</div>
+            <div class="project-name">ZapQuiz</div>
+            <p class="project-desc">
+              ZapQuiz is an open-source React-based toolkit for creating
+              engaging, interactive quiz platforms. It offers a modular
+              architecture, seamless client-side routing, and persistent state
+              management to deliver a smooth user experience.
+            </p>
+            <div class="project-stack">
+              <span class="stack-tag">React</span>
+              <span class="stack-tag">CSS</span>
+              <span class="stack-tag">JavaScript</span>
+              <span class="stack-tag">Responsive UI</span>
+            </div>
+            <div class="project-links">
+              <a
+                href="https://github.com/DeShyam01/ZapQuiz"
+                class="project-link"
+                target="_blank"
+              >
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"
+                  />
+                </svg>
+                GitHub
+              </a>
+              <a href="https://zap-quiz-eta.vercel.app/" class="project-link">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                  />
+                  <polyline points="15 3 21 3 21 9" />
+                  <line x1="10" y1="14" x2="21" y2="3" />
+                </svg>
+                Live Demo
+              </a>
+            </div>
+          </div>
+
+          <!-- Project 4 -->
+          <div class="project-card">
+            <div class="project-num">04</div>
+            <div class="project-name">NTP-Synced Digital Clock</div>
+            <p class="project-desc">
+              An ESP32 embedded clock with SH1106 OLED display, NTP time sync,
+              non-blocking WiFi reconnection via state machine, and
+              millis()-based cooldown logic. Real hardware deployed and running.
+            </p>
+            <div class="project-stack">
+              <span class="stack-tag">ESP32</span>
+              <span class="stack-tag">C++</span>
+              <span class="stack-tag">u8g2</span>
+              <span class="stack-tag">NTP</span>
+              <span class="stack-tag">Arduino</span>
+            </div>
+            <div class="project-links">
+              <a
+                href="https://github.com/DeShyam01/Smart-Clock"
+                class="project-link"
+                target="_blank"
+              >
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"
+                  />
+                </svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <div class="contact-inner">
+        <div class="contact-left reveal">
+          <div class="big-text">Let's<br /><span>connect.</span></div>
+          <p>
+            Open to internship opportunities, collaborations, and interesting
+            projects. Currently based in India — happy to work remotely.
+          </p>
+        </div>
+        <div class="contact-links reveal">
+          <a
+            href="https://github.com/DeShyam01"
+            class="contact-link-item"
+            target="_blank"
+          >
+            <div class="contact-link-left">
+              <svg
+                class="contact-link-icon"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"
+                />
+              </svg>
+              <div>
+                <div class="contact-link-name">GitHub</div>
+                <div class="contact-link-sub">github.com/DeShyam01</div>
+              </div>
+            </div>
+            <span class="contact-link-arrow">↗</span>
+          </a>
+          <a
+            href="www.linkedin.com/in/shyamsundar-gayen-77a904309"
+            class="contact-link-item"
+            target="_blank"
+          >
+            <div class="contact-link-left">
+              <svg
+                class="contact-link-icon"
+                width="20"
+                height="20"
+                viewBox="0 0 16 16"
+                fill="currentColor"
+              >
+                <path
+                  fill="currentColor"
+                  d="M12.225 12.225h-1.778V9.44c0-.664-.012-1.519-.925-1.519-.926 0-1.068.724-1.068 1.47v2.834H6.676V6.498h1.707v.783h.024c.348-.594.996-.95 1.684-.925 1.802 0 2.135 1.185 2.135 2.728l-.001 3.14zM4.67 5.715a1.037 1.037 0 0 1-1.032-1.031c0-.566.466-1.032 1.032-1.032.566 0 1.031.466 1.032 1.032 0 .566-.466 1.032-1.032 1.032zm.889 6.51h-1.78V6.498h1.78v5.727zM13.11 2H2.885A.88.88 0 0 0 2 2.866v10.268a.88.88 0 0 0 .885.866h10.226a.882.882 0 0 0 .889-.866V2.865A.88.88 0 0 0 13.11 2z"
+                />
+              </svg>
+              <div>
+                <div class="contact-link-name">LinkedIn</div>
+                <div class="contact-link-sub">
+                  www.linkedin.com/in/shyamsundar-gayen-77a904309
+                </div>
+              </div>
+            </div>
+            <span class="contact-link-arrow">↗</span>
+          </a>
+          <a href="#" class="contact-link-item">
+            <div class="contact-link-left">
+              <svg
+                class="contact-link-icon"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"
+                />
+                <polyline points="14 2 14 8 20 8" />
+              </svg>
+              <div>
+                <div class="contact-link-name">Resume</div>
+                <div class="contact-link-sub">Download PDF</div>
+              </div>
+            </div>
+            <span class="contact-link-arrow">↓</span>
+          </a>
+          <a
+            href="mailto:shyamsundargayen.work@email.com"
+            class="contact-link-item"
+          >
+            <div class="contact-link-left">
+              <svg
+                class="contact-link-icon"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                />
+                <polyline points="22,6 12,13 2,6" />
+              </svg>
+              <div>
+                <div class="contact-link-name">Email</div>
+                <div class="contact-link-sub">
+                  shyamsundargayen.work@email.com
+                </div>
+              </div>
+            </div>
+            <span class="contact-link-arrow">↗</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <span>Shyamsundar Gayen</span>
+      <span style="color: var(--text-3)"
+        >Built with HTML · CSS · JS — no frameworks used</span
+      >
+      <span style="color: var(--text-3)">© 2026</span>
+    </footer>
+  </body>
+</html>
