@@ -38,7 +38,7 @@ portfolio/
 
 | Folder/File | Purpose                                          |
 | ----------- | ------------------------------------------------ |
-| assets/     | Stores images of Projects                        |
+| images/     | Stores images of Projects                        |
 | style.css   | Contains styling files                           |
 | script.js   | Contains JavaScript functionality                |
 | index.html  | Main entry point of the website                  |
