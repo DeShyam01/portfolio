@@ -45,7 +45,12 @@
         </p>
         <div class="hero-cta">
           <a href="#projects" class="btn-primary">View My Work</a>
-          <a href="./Shyamsundar_Gayen_Resume.pdf" download="shyamsundar_gayen_resume.pdf" class="btn-secondary">Download Resume ↓</a>
+          <a
+            href="./Shyamsundar_Gayen_Resume.pdf"
+            download="shyamsundar_gayen_resume.pdf"
+            class="btn-secondary"
+            >Download Resume ↓</a
+          >
         </div>
       </div>
 
@@ -67,31 +72,19 @@
             ><span class="t-cmd">cat skills.txt</span>
           </div>
           <div class="t-out">
-            <span class="t-grn">languages:</span> C · Java · JS · TS · Python
+            <span class="t-grn">languages:</span> JS · TS · C · Java · Python
+          </div>
+          <div class="t-out">
+            <span class="t-grn">frontend:</span> Next.js · React.js · Tailwind
           </div>
           <div class="t-out">
             <span class="t-grn">backend:</span> Node.js · Express · MongoDB
           </div>
           <div class="t-out">
-            <span class="t-grn">systems:</span> ESP32 · Arduino
-          </div>
-          <div class="t-out">
             <span class="t-grn">tools:</span> Git · GitHub Actions · Render
           </div>
-          <br />
-          <div class="t-line">
-            <span class="t-prompt">➜</span
-            ><span class="t-cmd">git log --oneline -3</span>
-          </div>
           <div class="t-out">
-            <span class="t-org">a3f1c2b</span> feat: NTP sync clock with OLED
-          </div>
-          <div class="t-out">
-            <span class="t-org">b82de91</span> ci: docker + github actions
-            pipeline
-          </div>
-          <div class="t-out">
-            <span class="t-org">c44fa20</span> init: student task manager API
+            <span class="t-grn">systems:</span> ESP32 · Arduino
           </div>
           <br />
           <div class="t-line">
@@ -164,13 +157,11 @@
           <div class="skill-group">
             <div class="skill-group-label">Languages</div>
             <div class="skill-tags">
-              <span class="skill-tag primary">C</span>
-              <span class="skill-tag primary">C++</span>
               <span class="skill-tag primary">JavaScript</span>
               <span class="skill-tag primary">TypeScript</span>
+              <span class="skill-tag primary">C/C++</span>
               <span class="skill-tag">Java</span>
               <span class="skill-tag">Python</span>
-              <span class="skill-tag">SQL</span>
             </div>
           </div>
           <div class="skill-group">
@@ -178,27 +169,29 @@
             <div class="skill-tags">
               <span class="skill-tag primary">Node.js</span>
               <span class="skill-tag primary">Express.js</span>
-              <span class="skill-tag primary">MongoDB</span>
+              <span class="skill-tag primary">MySQL</span>
               <span class="skill-tag primary">REST APIs</span>
+              <span class="skill-tag">MongoDB</span>
               <span class="skill-tag">JWT Auth</span>
-              <span class="skill-tag">MySQL</span>
             </div>
           </div>
           <div class="skill-group">
             <div class="skill-group-label">Frontend</div>
             <div class="skill-tags">
-              <span class="skill-tag primary">React</span>
+              <span class="skill-tag primary">Next.js</span>
+              <span class="skill-tag primary">React.js</span>
+              <span class="skill-tag primary">Tailwind CSS</span>
               <span class="skill-tag">HTML/CSS</span>
+              <span class="skill-tag">Shadcn UI</span>
             </div>
           </div>
           <div class="skill-group">
             <div class="skill-group-label">DevOps & Tools</div>
             <div class="skill-tags">
-              <span class="skill-tag primary">Docker</span>
-              <span class="skill-tag primary">GitHub Actions</span>
               <span class="skill-tag primary">Git</span>
+              <span class="skill-tag primary">Docker</span>
+              <span class="skill-tag primary">Render</span>
               <span class="skill-tag">Docker Compose</span>
-              <span class="skill-tag">Render</span>
             </div>
           </div>
           <div class="skill-group">
@@ -234,26 +227,32 @@
           <div class="project-card featured">
             <div>
               <div class="project-num">01</div>
-              <div class="project-name">Student Task Manager API</div>
+              <div class="project-name">
+                Github Profile Analyzer - Full Stack Project
+              </div>
               <p class="project-desc">
-                A production-deployed REST API for managing student tasks with
-                JWT authentication, MongoDB Atlas as the database, and a full
-                CI/CD pipeline — GitHub Actions → Docker Hub → Render
-                auto-deploy. Debugged real-world issues like DNS SRV blocks on
-                mobile carriers and MongoDB connection edge cases.
+                Built a Full-Stack responsive GitHub analytics dashboard that
+                analyzes public GitHub profiles using GitHub API data. Developed
+                reusable UI components for profile overview, repository
+                insights, language statistics, and analysis history. Integrated
+                frontend with backend REST APIs to fetch, process, and display
+                profile insights dynamically. Implemented search validation,
+                loading states, error handling, and responsive layouts for
+                better user experience. Stored analyzed profile data in MySQL
+                with backend APIs for creating and retrieving analysis records.
               </p>
               <div class="project-stack">
+                <span class="stack-tag">Next.js</span>
+                <span class="stack-tag">TypeScript</span>
+                <span class="stack-tag">Tailwind</span>
                 <span class="stack-tag">Node.js</span>
-                <span class="stack-tag">Express</span>
-                <span class="stack-tag">MongoDB</span>
-                <span class="stack-tag">JWT</span>
-                <span class="stack-tag">Docker</span>
-                <span class="stack-tag">GitHub Actions</span>
+                <span class="stack-tag">Express.js</span>
+                <span class="stack-tag">MySQL</span>
                 <span class="stack-tag">Render</span>
               </div>
               <div class="project-links">
                 <a
-                  href="https://github.com/DeShyam01/student-task-manager-api"
+                  href="https://github.com/DeShyam01/github-profile-analyzer"
                   class="project-link"
                   target="_blank"
                 >
@@ -264,43 +263,51 @@
                   </svg>
                   GitHub
                 </a>
+                <a
+                  href="https://github-profile-analyzer-six-omega.vercel.app/"
+                  class="project-link"
+                >
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                    />
+                    <polyline points="15 3 21 3 21 9" />
+                    <line x1="10" y1="14" x2="21" y2="3" />
+                  </svg>
+                  Live Demo
+                </a>
               </div>
-            </div>
-            <div
-              style="
-                align-self: center;
-                text-align: right;
-                opacity: 0.08;
-                font-family: var(--font-display);
-                font-size: 6rem;
-                font-weight: 800;
-                line-height: 1;
-                pointer-events: none;
-                user-select: none;
-              "
-            >
-              API
             </div>
           </div>
 
           <!-- Project 2 -->
           <div class="project-card">
             <div class="project-num">02</div>
-            <div class="project-name">MovieMania</div>
+            <div class="project-name">Student Task Manager API</div>
             <p class="project-desc">
-              MovieMania is a stylish front-end movie showcase website built
-              using only HTML and CSS. It features a clean card-based layout,
-              responsive design, and theme toggle — all crafted without any
-              JavaScript. The site offers a curated list of trending shows and
-              lets users visit external pages for more details.
+              A production-deployed REST API for managing student tasks with JWT
+              authentication, MongoDB Atlas as the database. Ensured password
+              protection with hashing. Containerized the backend api with docker
+              and hosted on Render.
             </p>
             <div class="project-stack">
-              <span class="stack-tag">HTML</span>
-              <span class="stack-tag">CSS</span>
+              <span class="stack-tag">Node.js</span>
+              <span class="stack-tag">Express.js</span>
+              <span class="stack-tag">MongoDB</span>
+              <span class="stack-tag">REST API</span>
+              <span class="stack-tag">BCrypt</span>
+              <span class="stack-tag">JWT Authentication</span>
+              <span class="stack-tag">Docker</span>
+              <span class="stack-tag">Render</span>
             </div>
             <div class="project-links">
               <a
-                href="https://github.com/DeShyam01/MovieMania"
+                href="https://github.com/DeShyam01/student-task-manager-api"
                 class="project-link"
                 target="_blank"
               >
@@ -310,24 +317,6 @@
                   />
                 </svg>
                 GitHub
-              </a>
-              <a
-                href="https://deshyam01.github.io/MovieMania/"
-                class="project-link"
-              >
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                >
-                  <path
-                    d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
-                  />
-                  <polyline points="15 3 21 3 21 9" />
-                  <line x1="10" y1="14" x2="21" y2="3" />
-                </svg>
-                Live Demo
               </a>
             </div>
           </div>
@@ -335,22 +324,26 @@
           <!-- Project 3 -->
           <div class="project-card">
             <div class="project-num">03</div>
-            <div class="project-name">ZapQuiz</div>
+            <div class="project-name">Library Manager API</div>
             <p class="project-desc">
-              ZapQuiz is an open-source React-based toolkit for creating
-              engaging, interactive quiz platforms. It offers a modular
-              architecture, seamless client-side routing, and persistent state
-              management to deliver a smooth user experience.
+              Developed REST APIs for managing books, user authentication,
+              issue/return flow, and librarian access. Implemented JWT
+              authentication, bcrypt password hashing, and protected backend
+              routes. Added backend security and reliability features including
+              rate limiting and structured error handling. Tested APIs using
+              Postman and deployed the backend service on Rende
             </p>
             <div class="project-stack">
-              <span class="stack-tag">React</span>
-              <span class="stack-tag">CSS</span>
-              <span class="stack-tag">JavaScript</span>
-              <span class="stack-tag">Responsive UI</span>
+              <span class="stack-tag">Node.js</span>
+              <span class="stack-tag">Express.js</span>
+              <span class="stack-tag">MongoDB</span>
+              <span class="stack-tag">REST API</span>
+              <span class="stack-tag">JWT</span>
+              <span class="stack-tag">BCrypt</span>
             </div>
             <div class="project-links">
               <a
-                href="https://github.com/DeShyam01/ZapQuiz"
+                href="https://github.com/DeShyam01/library-manager-apis"
                 class="project-link"
                 target="_blank"
               >
@@ -361,24 +354,9 @@
                 </svg>
                 GitHub
               </a>
-              <a href="https://zap-quiz-eta.vercel.app/" class="project-link">
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                >
-                  <path
-                    d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
-                  />
-                  <polyline points="15 3 21 3 21 9" />
-                  <line x1="10" y1="14" x2="21" y2="3" />
-                </svg>
-                Live Demo
-              </a>
             </div>
           </div>
-
+          
           <!-- Project 4 -->
           <div class="project-card">
             <div class="project-num">04</div>
@@ -409,7 +387,6 @@
                 GitHub
               </a>
             </div>
-          </div>
         </div>
       </div>
     </section>
@@ -476,7 +453,11 @@
             </div>
             <span class="contact-link-arrow">↗</span>
           </a>
-          <a href="./Shyamsundar_Gayen_Resume.pdf" download="shyamsundar_gayen_resume.pdf" class="contact-link-item">
+          <a
+            href="./Shyamsundar_Gayen_Resume.pdf"
+            download="shyamsundar_gayen_resume.pdf"
+            class="contact-link-item"
+          >
             <div class="contact-link-left">
               <svg
                 class="contact-link-icon"
